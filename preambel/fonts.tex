@@ -46,9 +46,15 @@
 %\usepackage{mathabx} - Ueberschreibt leider zu viel - und die \le-Zeichen usw. sehen nicht gut aus!
 
 
-%Fallback-Schriftart
-\usepackage{lmodern}  % Latin Modern Fonts sind die Nachfolger von Computer Modern, den LaTeX-Standardfonts
-%Quelle: http://homepage.ruhr-uni-bochum.de/Georg.Verweyen/pakete.html
+%Fallback-Schriftart: lmodern
+%cfr-lm is preferred over lmodern. Reasoning at http://tex.stackexchange.com/a/247543/9075
+\usepackage[%
+rm={oldstyle=false,proportional=true},%
+sf={oldstyle=false,proportional=true},%
+tt={oldstyle=false,proportional=true,variable=true},%
+qt=false%
+]{cfr-lm}
+
 %Allerdings sieht diese Schritart in Diplomarbeiten fuer Fliesstext auch nicht besonders schoen aus.
 %Trotzdem ist sie fuer Programmcode gut geeignet
 
